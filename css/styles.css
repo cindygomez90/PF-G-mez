@@ -1,0 +1,183 @@
+* {
+    margin: o;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Hind Guntur', sans-serif;
+    font-family: 'Kulim Park', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+#encabezado {
+    height: 120px;
+    background-color:#88958D;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer,h1, h2, h3, h4 {
+    text-align: center;
+}
+
+footer {
+    background-color:#88958D;
+    height: 70px;
+}
+
+.párrafo-cursiva {
+    font-style: italic;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (min-width: 480px){
+    .menu-nav {
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 768px){
+    .menu-nav {
+        flex-direction: row;
+        align-items: end;
+        gap: 80px;
+    }
+}
+
+.imagen-centrada {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.imagen-colegio {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 150px;
+    gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px){
+    .imagen-colegio {
+        flex-direction: column;
+    }
+}
+
+.seccion {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.pie-pagina {
+    padding-top: 20px;
+}
+
+.texto-izquierda {
+    text-align: left;
+}
+
+.servicios {
+    background-color: #88958D;
+    width: 200px;
+    height: 150px;
+    margin: 20px;
+    padding: 60px;
+    }
+
+.servicios-img {
+    display: block;
+    margin: 0 auto ;
+}
+
+.servicios-padre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.equipo-img {
+    display: block;
+    margin right: 40px;
+}
+
+
+.ing {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+}
+
+@media (min-width: 780px){
+    .ing {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.proyecto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+@media (min-width: 780px){
+    .proyecto {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.formulario {
+    border: solid 5px grey;
+}
+
+.datos-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 780px){
+    .datos-contacto {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+}
