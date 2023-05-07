@@ -1,6 +1,6 @@
+@import "../var/variables";
 footer {
-    background-color:#88958D;
-    height: 70px;
+    @include bg-header-footer;
 }
 
 .pie-pagina {

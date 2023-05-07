@@ -1,16 +1,15 @@
+@import "../var/variables";
+
 #encabezado {
-    height: 120px;
-    background-color:#88958D;
-    font-weight: bold;
+    @include bg-header-footer;
 }
 
 ul {
     list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: black;
+    a {
+        text-decoration: none;
+        color: black;
+        }
 }
 
 header {
