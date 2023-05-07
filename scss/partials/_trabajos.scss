@@ -1,0 +1,13 @@
+.proyecto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+@media (min-width: 780px){
+    .proyecto {
+        display: flex;
+        flex-direction: row;
+    }
+}

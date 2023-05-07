@@ -1,0 +1,45 @@
+#encabezado {
+    height: 120px;
+    background-color:#88958D;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 480px){
+    .menu-nav {
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 768px){
+    .menu-nav {
+        flex-direction: row;
+        align-items: end;
+        gap: 80px;
+    }
+}

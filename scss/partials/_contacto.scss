@@ -1,0 +1,16 @@
+.formulario {
+    border: solid 5px grey;
+}
+
+.datos-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 780px){
+    .datos-contacto {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+}

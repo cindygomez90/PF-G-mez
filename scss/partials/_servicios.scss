@@ -1,0 +1,17 @@
+.servicios {
+    background-color: #88958D;
+    width: 300px;
+    height: 300px;
+    margin: 40px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+.servicios-padre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
