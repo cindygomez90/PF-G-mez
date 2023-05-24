@@ -1,8 +1,10 @@
-@import "../var/variables";
 footer {
-    @include bg-header-footer;
+    display: flex;
+    flex-direction: column;
+    background-color:#88958D ;
 }
 
-.pie-pagina {
-    padding-top: 20px;
+.iconos {
+    color: black;
 }
+

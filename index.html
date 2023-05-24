@@ -19,52 +19,69 @@
     <header id="encabezado">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                
-                <a href="index.html">
-                    <img src="img/logo2.png" alt="Logo Terra" title="Logo del estudio agrimensura y civil" class="logo-inicio">
-                </a>
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navbarNav">
-
-                <ul class="navbar-nav">
+            <a href="index.html"> <img src="img/logo2.png" alt="Logo Terra" title="Logo del estudio agrimensura y civil" class="logo-inicio"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
                     <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                     </li>
-
+    
                     <li class="nav-item">
-                    <a class="nav-link" href="pages/equipo.html">Equipo</a>
+                    <a class="nav-link active" href="pages/equipo.html">Equipo</a>
                     </li>
-
+    
                     <li class="nav-item">
-                    <a class="nav-link" href="pages/servicios.html">Servicios</a>
+                    <a class="nav-link active" href="pages/servicios.html">Servicios</a>
                     </li>
-
+    
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/trabajos.html">Trabajos</a>
+                    <a class="nav-link active" href="pages/trabajos.html">Trabajos</a>
                     </li>
-
+    
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                    <a class="nav-link active" href="pages/contacto.html">Contacto</a>
                     </li>
                 </ul>
-                </div>
             </div>
+        </div>
         </nav>
     </header>
 
     <main>
         <!--Presentación inicial de la página-->
-        <h1 class="seccion">Terra | Agrimensura y Obras civiles</h1>    
-        <section class="seccion">
-            <!--Falta definir si poner el logo en tamaño grande o alguna imagen/foto-->
-            <img src="img/logo4.png" alt="Logo grande" class="imagen-centrada">
+        <section>
+        <h1 class="seccion">Terra | Agrimensura y Obras civiles</h1>  
+        
+        <!--Galería de fotos-->
+        <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="img/foto galeria1.jpg" class="d-block w-100" alt="Agrimensura Rural">
+        </div>
+
+        <div class="carousel-item">
+        <img src="img/foto galeria2.jpg" class="d-block w-100" alt="Obra Civil">
+        </div>
+
+        <div class="carousel-item">
+        <img src="img/foto galeria3.jpg" class="d-block w-100" alt="Agrimensura Urbana">
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
         </section>
 
-        <section class="seccion">
+        <section class="seccion mt-5">
             <h2>Nosotros</h2>
             <p>Terra es un estudio ubicado en la provincia de Córdoba, formado por ingenieros que brinda servicios tanto de <strong> agrimensura como obras civiles </strong> abarcando tanto al ámbito rural como urbano.</p>
             <p>Nuestro objetivo es brindar un servicio profesional de acuerdo a lo requerido por el cliente haciendo uso eficiente de las últimas tecnologías en equipamiento, los recursos disponibles y una constante capacitación.</p>
@@ -81,14 +98,25 @@
 
 <!--Pie de página-->
 <footer>
-    <p>
-    <img src="img/logo.png" alt="Logo Terra" class="pie-pagina">
-    2023 © Terra | Agrimensura y Obras civiles.
+        <div class="text-center mt-4">
+            <p> Somos expertos que brindan soluciones de manera integral.</p>
+        </div>
     
-    <img src="img/facebook.png" alt="facebook" class="pie-pagina">
-    <img src="img/instagram.png" alt="instagram" class="pie-pagina">
-    </p>
-</footer>
+        <div class="text-center redes">
+            Visitanos en nuestras redes
+            <a href="https://www.instagram.com" target="_blank"> <i class="fa-brands fa-instagram iconos"></i>
+            </a>
+            <a href="https://es-la.facebook.com/>" target="_blank"> <i class="fa-brands fa-facebook iconos"></i>
+            </a>
+        </div>
+
+        <div class="text-center mt-3">
+            <p> 2023 © Terra | Agrimensura y Obras civiles.</p>
+        </div>
+    </footer>
+
+<!--Script Fontawesome-->
+    <script src="https://kit.fontawesome.com/31470609fe.js" crossorigin="anonymous"></script>
 
 <!--Script Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>

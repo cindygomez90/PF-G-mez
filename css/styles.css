@@ -1,11 +1,19 @@
 @charset "UTF-8";
 .formulario {
-  border: solid 5px grey;
+  background-color: #88958D;
+  border: solid 7px grey;
+  margin: 50px 100px;
+}
+
+li {
+  list-style: none;
+  margin: 10px 0px;
 }
 
 .datos-contacto {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 @media (min-width: 780px) {
@@ -17,14 +25,21 @@
 }
 .equipo-img {
   display: block;
-  margin: 40px;
+  margin: 80px;
+  border-radius: 50%;
+}
+
+i {
+  text-align: center;
 }
 
 .ing {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-items: center;
   align-content: center;
+  gap: 10px;
 }
 
 @media (min-width: 780px) {
@@ -34,12 +49,13 @@
   }
 }
 footer {
+  display: flex;
+  flex-direction: column;
   background-color: #88958D;
-  height: 70px;
 }
 
-.pie-pagina {
-  padding-top: 20px;
+.iconos {
+  color: black;
 }
 
 /*Reseteo CSS*/
@@ -60,7 +76,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-footer, h1, h2, h3, h4 {
+h1, h2, h3, h4 {
   text-align: center;
 }
 
@@ -82,57 +98,42 @@ footer, h1, h2, h3, h4 {
   text-align: left;
 }
 
-#encabezado {
-  height: 120px;
-  background-color: #88958D;
-  font-weight: bold;
+.carousel-item img {
+  height: 250px;
 }
 
-ul {
-  list-style: none;
+@media (min-width: 780px) {
+  #carouselExample {
+    margin: 0 auto;
+    width: 70%;
+  }
+  .carousel-item img {
+    height: 550px;
+  }
 }
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
 header {
-  position: sticky;
-  top: 0;
+  background-color: #88958D;
+}
+
+.navbar-nav {
   display: flex;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
   gap: 20px;
 }
 
-.menu-nav {
-  display: flex;
-  flex-direction: column;
-}
-
-@media (min-width: 480px) {
-  .menu-nav {
-    flex-direction: row;
+@media (max-width: 991px) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
     gap: 10px;
   }
 }
-@media (min-width: 768px) {
-  .menu-nav {
-    flex-direction: row;
-    align-items: end;
-    gap: 80px;
-  }
-}
 .imagen-colegio {
-  width: 300px;
-  height: 100px;
-  margin-bottom: 150px;
-  gap: 50px;
+  height: 80px;
+  margin: 100px 150px;
   display: flex;
   flex-wrap: wrap;
+  gap: 5px;
   justify-content: center;
   align-items: center;
 }
@@ -144,8 +145,8 @@ header {
 }
 .servicios {
   background-color: #88958D;
-  width: 300px;
-  height: 300px;
+  width: 270px;
+  height: 270px;
   margin: 40px;
   padding: 60px;
   display: flex;
@@ -160,17 +161,31 @@ header {
   align-items: center;
 }
 
-.proyecto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+.servicios:hover {
+  transform: scale(1.2);
 }
 
-@media (min-width: 780px) {
+.imagen-proyecto {
+  height: 400px;
+  width: 260px;
+  margin-left: 80px;
+}
+
+.proyecto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 150px;
+}
+
+.descrip-proy {
+  text-align: right;
+}
+
+@media (max-width: 780px) {
   .proyecto {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 

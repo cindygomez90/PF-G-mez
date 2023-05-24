@@ -16,7 +16,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-footer,h1, h2, h3, h4 {
+h1, h2, h3, h4 {
     text-align: center;
 }
 
@@ -36,4 +36,18 @@ footer,h1, h2, h3, h4 {
 
 .texto-izquierda {
     text-align: left;
+}
+
+.carousel-item img {
+    height: 250px;
+}
+
+@media (min-width: 780px) {
+    #carouselExample {
+        margin: 0 auto;
+        width: 70%;
+    }
+    .carousel-item img {
+        height: 550px;
+    }
 }
